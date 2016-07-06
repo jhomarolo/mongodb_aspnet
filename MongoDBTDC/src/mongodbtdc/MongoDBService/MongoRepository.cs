@@ -21,9 +21,9 @@ namespace MongoDBTDC.MongoDBService
 
             if (isReplicaSet)
             {
-                servers.Add(new MongoServerAddress("45.55.184.173", 27017));
-                servers.Add(new MongoServerAddress("45.55.209.215", 27017));
-                servers.Add(new MongoServerAddress("45.55.209.216", 27017));
+                servers.Add(new MongoServerAddress("xxx.xxx.x.xxx", 27017));
+                servers.Add(new MongoServerAddress("xxx.xxx.x.xxx", 27017));
+                servers.Add(new MongoServerAddress("xxx.xxx.x.xxx", 27017));
                 
 
                 mongoSettings.WriteConcern =
@@ -38,7 +38,7 @@ namespace MongoDBTDC.MongoDBService
 
             else
             {
-                servers.Add(new MongoServerAddress("162.243.53.210", 27017));
+                servers.Add(new MongoServerAddress("xxx.xxx.xxx.xxx", 27017));
                 mongoSettings.Servers = servers;
                 mongoSettings.ConnectionMode = ConnectionMode.Automatic;
                 _mongoClient = new MongoClient(mongoSettings);
